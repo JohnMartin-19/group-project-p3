@@ -5,6 +5,7 @@ Group members:
 2. Faith
 3. Diana C
 4. John M
+   
 PROJECT REQUIREMENTS
 A CLI application that solves a real-world problem and adheres to best practices.
 A database created and modified with SQLAlchemy ORM with 3+ related tables.
@@ -20,3 +21,5 @@ CLI
 OOP
 Database Mngt
 SQLAlchemy ORM
+Project Outline:
+The project will be a RECIPE MANAGEMENT SYSTEM which will allow users to manage recipes, search for recipes based on ingredients and generate appropriate meal plans
