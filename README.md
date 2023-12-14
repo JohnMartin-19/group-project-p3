@@ -2,7 +2,7 @@
 Phase 3 group project
 Group members:
 1. Zakaria M
-2. Faith
+2. Faith N
 3. Diana C
 4. John M
    
