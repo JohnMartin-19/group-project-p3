@@ -5,6 +5,7 @@ Group members:
 2. Faith N
 3. Diana C
 4. John M
+5. Ahmed Abdi
    
 PROJECT REQUIREMENTS
 A CLI application that solves a real-world problem and adheres to best practices.
