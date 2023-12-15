@@ -29,7 +29,7 @@ def generate_meal_plan(user, date, recipes):
     session.commit()
 
 def main():
-    print("Welcome to the Meal Plan Generator CLI!")
+    print("Welcome to SAMOURIE TOURE Meal Plan Generator CLI!")
 
     # Get user input
     username = input("Enter your username: ")
@@ -37,9 +37,27 @@ def main():
     user = create_user(username, email)
 
     print("\nAvailable Recipes:")
-    # You should have a list of predefined recipes or fetch them from a database
+    #  a list of predefined recipes or fetch them from a database
     recipe_data = [
         {"name": "Spaghetti Bolognese", "ingredients": "Pasta, Meat, Tomato Sauce", "instructions": "Cook pasta, brown meat, add sauce."},
+        {"name": "Chicken Rice", "ingredients": "Chicken, Vegetables, Rice, Chia seeds", "instructions": "fry chicken and vegetables, add Steam rice."},
+        {"name": "Chicken Ugali", "ingredients": "Chicken, Vegetables, Maize Flour", "instructions": "Stir-fry chicken and vegetables, add stir your maize flour till cooked."},
+        {"name": "Beef Chapaii", "ingredients": "Beef, Vegetables, Wheat Flour", "instructions": "Boil then fry beef and vegetables, add cook your dough of wheat."},
+        {"name": "Chapo Beans", "ingredients": "Wheat flour, Beans, Coconut milk", "instructions": "cook your dough of wheat,boil then cook your beans, add coconut milk and salt to taste."},
+        {"name": "Chicken Stir-Fry", "ingredients": "Chicken, Vegetables, Soy Sauce", "instructions": "Stir-fry chicken and vegetables, add soy sauce."},
+        {"name": "Chicken Stir-Fry", "ingredients": "Chicken, Vegetables, Soy Sauce", "instructions": "Stir-fry chicken and vegetables, add soy sauce."},
+        {"name": "Chicken Stir-Fry", "ingredients": "Chicken, Vegetables, Soy Sauce", "instructions": "Stir-fry chicken and vegetables, add soy sauce."},
+        {"name": "Chicken Stir-Fry", "ingredients": "Chicken, Vegetables, Soy Sauce", "instructions": "Stir-fry chicken and vegetables, add soy sauce."},
+        {"name": "Chicken Stir-Fry", "ingredients": "Chicken, Vegetables, Soy Sauce", "instructions": "Stir-fry chicken and vegetables, add soy sauce."},
+        {"name": "Chicken Stir-Fry", "ingredients": "Chicken, Vegetables, Soy Sauce", "instructions": "Stir-fry chicken and vegetables, add soy sauce."},
+        {"name": "Chicken Stir-Fry", "ingredients": "Chicken, Vegetables, Soy Sauce", "instructions": "Stir-fry chicken and vegetables, add soy sauce."},
+        {"name": "Chicken Stir-Fry", "ingredients": "Chicken, Vegetables, Soy Sauce", "instructions": "Stir-fry chicken and vegetables, add soy sauce."},
+        {"name": "Chicken Stir-Fry", "ingredients": "Chicken, Vegetables, Soy Sauce", "instructions": "Stir-fry chicken and vegetables, add soy sauce."},
+        {"name": "Chicken Stir-Fry", "ingredients": "Chicken, Vegetables, Soy Sauce", "instructions": "Stir-fry chicken and vegetables, add soy sauce."},
+        {"name": "Chicken Stir-Fry", "ingredients": "Chicken, Vegetables, Soy Sauce", "instructions": "Stir-fry chicken and vegetables, add soy sauce."},
+        {"name": "Chicken Stir-Fry", "ingredients": "Chicken, Vegetables, Soy Sauce", "instructions": "Stir-fry chicken and vegetables, add soy sauce."},
+        {"name": "Chicken Stir-Fry", "ingredients": "Chicken, Vegetables, Soy Sauce", "instructions": "Stir-fry chicken and vegetables, add soy sauce."},
+        {"name": "Chicken Stir-Fry", "ingredients": "Chicken, Vegetables, Soy Sauce", "instructions": "Stir-fry chicken and vegetables, add soy sauce."},
         {"name": "Chicken Stir-Fry", "ingredients": "Chicken, Vegetables, Soy Sauce", "instructions": "Stir-fry chicken and vegetables, add soy sauce."},
         # Add more recipes as needed
     ]
