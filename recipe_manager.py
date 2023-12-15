@@ -50,7 +50,8 @@ class RecipeApp:
     def authenticate_user(self, username, password):
         return next((user for user in self.users if user.username == username and user.password == password), None)    
 
-''
+'''
+TEST CASES 
 recipe_app = RecipeApp()
 user = recipe_app.create_user("Edda Nziza Makuyu", "siri_salama")
 
@@ -68,3 +69,4 @@ print(f"Instructions: {recipe.instructions}")
 print(f"Ingredients: {', '.join(recipe.ingredients)}")
 print(f"Categories: {', '.join(recipe.categories)}")
 print(f"Tags: {', '.join(recipe.tags)}")
+'''
