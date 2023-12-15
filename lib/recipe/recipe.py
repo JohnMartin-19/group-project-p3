@@ -6,3 +6,4 @@ class Recipe:
 
     def add_ingredient(self, ingredient):
         self.ingredients.append(ingredient)
+

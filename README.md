@@ -24,3 +24,4 @@ Database Mngt
 SQLAlchemy ORM
 Project Outline:
 The project will be a RECIPE MANAGEMENT SYSTEM which will allow users to manage recipes, search for recipes based on ingredients and generate appropriate meal plans
+
