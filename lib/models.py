@@ -2,6 +2,7 @@ from sqlalchemy import create_engine, func
 from sqlalchemy import ForeignKey, Table, Column, Integer, String
 from sqlalchemy.orm import relationship, backref
 from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy import Date
 
 engine = create_engine('sqlite:///many_to_many.db')
 
