@@ -53,12 +53,6 @@ def main():
         {"name": "RNB", "ingredients": "Rice, Vegetables, Beans", "instructions": "Cook beans and vegetables, serve with rice."},
         {"name": "Rice Kamande", "ingredients": "Rice, Vegetables, Kamande", "instructions": "Cook Kamade and vegetables, serve with rice."},
         {"name": "SMOCHA", "ingredients": "Smokie,  Wheat Flour, sauce", "instructions": "Cook chapaii,put smokie hapo katikati add all sauces you want."},
-        {"name": "Chicken Stir-Fry", "ingredients": "Chicken, Vegetables, Soy Sauce", "instructions": "Stir-fry chicken and vegetables, add soy sauce."},
-        {"name": "Chicken Stir-Fry", "ingredients": "Chicken, Vegetables, Soy Sauce", "instructions": "Stir-fry chicken and vegetables, add soy sauce."},
-        {"name": "Chicken Stir-Fry", "ingredients": "Chicken, Vegetables, Soy Sauce", "instructions": "Stir-fry chicken and vegetables, add soy sauce."},
-        {"name": "Chicken Stir-Fry", "ingredients": "Chicken, Vegetables, Soy Sauce", "instructions": "Stir-fry chicken and vegetables, add soy sauce."},
-        {"name": "Chicken Stir-Fry", "ingredients": "Chicken, Vegetables, Soy Sauce", "instructions": "Stir-fry chicken and vegetables, add soy sauce."},
-        {"name": "Chicken Stir-Fry", "ingredients": "Chicken, Vegetables, Soy Sauce", "instructions": "Stir-fry chicken and vegetables, add soy sauce."},
         # Add more recipes as needed
     ]
 
@@ -66,7 +60,7 @@ def main():
     for data in recipe_data:
         recipe = create_recipe(data["name"], data["ingredients"], data["instructions"])
         recipes.append(recipe)
-        print(f"- {data['name']}")
+        print(f"- {data['name']},{data['ingredients']},{data['instructions']}")
 
     # Generate a meal plan for the next 7 days
     today = datetime.now().date()
@@ -74,7 +68,7 @@ def main():
         date = today + timedelta(days=i)
         print(f"\nGenerating Meal Plan for {date}...")
         generate_meal_plan(user, date, recipes)
-        print("Meal Plan generated successfully!")
+        print(f"Meal Plan for {user} ,has been generated successfully!")
 
 if __name__ == "__main__":
     main()
