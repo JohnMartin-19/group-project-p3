@@ -35,6 +35,7 @@ def main():
     username = input("Enter your username: ")
     email = input("Enter your email: ")
     user = create_user(username, email)
+    ingreds = input('Enter prefered Ingredients:')
 
     print("\nAvailable Recipes:")
     #  a list of predefined recipes or fetch them from a database
@@ -58,6 +59,9 @@ def main():
 
     recipes = []
     for data in recipe_data:
+        for ingreds in recipe_data:
+            if ingreds == recipe_data:
+             return recipe
         recipe = create_recipe(data["name"], data["ingredients"], data["instructions"])
         recipes.append(recipe)
         print(f"- {data['name']},{data['ingredients']},{data['instructions']}")
@@ -68,7 +72,7 @@ def main():
         date = today + timedelta(days=i)
         print(f"\nGenerating Meal Plan for {date}...")
         generate_meal_plan(user, date, recipes)
-        print(f"Meal Plan for {user} ,has been generated successfully!")
+        print(f"Meal Plan for {user.username} ,has been generated successfully!")
 
 if __name__ == "__main__":
     main()
