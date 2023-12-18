@@ -59,12 +59,11 @@ def main():
 
     recipes = []
     for data in recipe_data:
-        for ingreds in recipe_data:
-            if ingreds == recipe_data:
-             return recipe
-        recipe = create_recipe(data["name"], data["ingredients"], data["instructions"])
-        recipes.append(recipe)
-        print(f"- {data['name']},{data['ingredients']},{data['instructions']}")
+        if ingreds== recipe_data:
+             
+            recipe = create_recipe(data["name"], data["ingredients"], data["instructions"])
+            recipes.append(recipe)
+            print(f"- {data['name']},{data['ingredients']},{data['instructions']}")
 
     # Generate a meal plan for the next 7 days
     today = datetime.now().date()
@@ -73,6 +72,7 @@ def main():
         print(f"\nGenerating Meal Plan for {date}...")
         generate_meal_plan(user, date, recipes)
         print(f"Meal Plan for {user.username} ,has been generated successfully!")
+        print(f"Today's meal plan is : {recipe}")
 
 if __name__ == "__main__":
     main()
