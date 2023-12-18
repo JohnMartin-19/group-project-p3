@@ -24,3 +24,8 @@ Database Mngt
 SQLAlchemy ORM
 Project Outline:
 The project will be a RECIPE MANAGEMENT SYSTEM which will allow users to manage recipes, search for recipes based on ingredients and generate appropriate meal plans
+
+
+to run the application, first install the required dependencies after clonibg the repo. Do this by entering: chmod+x cli.py - Thi will make the file executable
+
+Then type: python3 cli.py in the terminal to execute the code and interact with the terminal
